@@ -1,0 +1,8 @@
+services:
+  landing-pages:
+    image: ghcr.io/diegoibarra93/gtm-landing-pages:latest
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    labels:
+      - "komodo.managed=true"
